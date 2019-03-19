@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width , initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="groot1.css">
+    </head>
+    <body>
+        <!-- Navigation bar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mine">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="groot.html"><b>GROOT</b></a>
+                </div>
+                <!-- Collapsing navigation bar-->
+                <div class="collapse navbar-collapse" id= "mine">
+                <ul class="nav navbar-nav navbar-right" style="color:burlywood;">
+                    <li id="demo"></li>
+                        <script>
+                            var d = new Date();
+                            document.getElementById("demo").innerHTML = d.toDateString();
+                        </script>
+                    <li class="col"><a href="#"><b>Home</b></a></li>
+                    <li class="col"><a href="#"><b>About Groot</b></a></li>
+                    <li class="col"><a href="#"><b>Contact Us</b></a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- Zoom the image on hover-->
+        <div class="first">
+           <img onmouseover="zoomin(this)" onmouseout="zoomout(this)" class="img-responsive" src="LOGO-01 (2).png" alt="groot">
+        <script>
+            function zoomin(x){
+                x.style.width = "285px";
+                x.style.height = "385px";
+            }
+            function zoomout(x){
+                x.style.width = "275px";
+                x.style.height = "375px"
+            }
+        </script>
+        </div>    
+    </body>
+
+</html>
