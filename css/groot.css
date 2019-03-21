@@ -1,5 +1,5 @@
     .first{
-                background : url(groo.jpg) no-repeat center fixed; 
+                background : url(../img/groo.jpg) no-repeat center fixed; 
                 background-size : cover;
                 width: auto;
                 height: 390px;
@@ -7,31 +7,35 @@
             }
 
             .navbar-inverse{
-                background-color: rgb(165,107,070);
+                background-color: #BD9A56;
                 border-radius: 0;
                 border: 0;
                 padding-bottom: 0px;
                 margin-bottom: 0px;
             }
             .navbar-inverse .navbar-header a{
-                color:black;
+                color:white;
             }
             .navbar-inverse .navbar-nav #demo{
                 padding-top: 15px;
                 padding-right: 15px;
-                color:black;
+                color:white;
+                text-transform: uppercase;
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-weight: 500;
             }
             .navbar-inverse .navbar-nav .col a{
-                color:black;
+                color:white;
+                text-transform: uppercase;
             }
             .navbar-inverse .navbar-header a:hover{
-                color: rgba(106, 212, 56, 0.678);
+                color: rgba(171, 243, 138, 0.678);
             }
             .navbar-inverse .navbar-header .navbar-toggle .icon-car a:hover{
-                color: rgba(106, 212, 56, 0.678);
+                color: rgba(171, 243, 138, 0.678);
             }
             .navbar-inverse .navbar-nav .col a:hover {
-	            color: rgba(106, 212, 56, 0.678);
+	            color: rgba(171, 243, 138, 0.678);
             }
             .img-responsive{
                 width:275px;
