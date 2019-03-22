@@ -1,0 +1,48 @@
+    .parallax{
+        background: url(Untitled.png);
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+#features{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 100px;
+     margin-top: 20px;
+      
+ }
+ #idimg{
+     width:365px;
+    margin-left:auto; 
+    margin-right: auto;
+ }
+ .box1{
+      height:250px;
+      border-style: solid;
+      border-width: 5px ;
+      background: url(groo2.png);
+     background-size: contain;
+   
+      box-sizing: border-box;
+      margin-right: 90px;
+      flex:0 0 200px;
+  }
+ 
+    .container{
+    display: flex;
+   overflow-x: auto;
+   flex-wrap: nowrap;
+}
+.container::-webkit-scrollbar {
+  display: none; 
+}   
+.h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top:80px ;
+    font-size: 20px;
+        }
+    .h2:hover{
+    font-size: 22px;   
+    }
