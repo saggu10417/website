@@ -1,8 +1,8 @@
     .first{
                 background : url(../img/groo.jpg) no-repeat center fixed; 
                 background-size : cover;
-                min-width: auto;
-	    	min-height:auto;
+                min-width: 100%;
+	    	min-height:100%;
            }
 
             .navbar-inverse{
