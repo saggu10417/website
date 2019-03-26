@@ -1,46 +1,57 @@
     .first{
                 background : url(../img/groo.jpg) no-repeat center fixed; 
                 background-size : cover;
-                width: auto;
-                height: 390px;
-                padding-top: 0px;
-            }
+                min-width: auto;
+	    	min-height:auto;
+           }
 
             .navbar-inverse{
-                background-color: #BD9A56;
                 border-radius: 0;
                 border: 0;
                 padding-bottom: 0px;
                 margin-bottom: 0px;
             }
-            .navbar-inverse .navbar-header a{
-                color:white;
-            }
+            
             .navbar-inverse .navbar-nav #demo{
                 padding-top: 15px;
                 padding-right: 15px;
                 color:white;
-                text-transform: uppercase;
-                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-                font-weight: 500;
+		}
+           
+		#typing{
+                color: rgb(0, 0, 0); 
+                font-family: "Courier";
+                width:18em;
+                font-size: 4vh;
+                margin: 150px 0 0 0;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: type 4s steps(60, end);
             }
-            .navbar-inverse .navbar-nav .col a{
-                color:white;
-                text-transform: uppercase;
+            #typing:nth-child(2){
+                animation: type2 6s steps(60, end);
+                margin: 0 0 0 0;
             }
-            .navbar-inverse .navbar-header a:hover{
-                color: rgba(171, 243, 138, 0.678);
-            }
-            .navbar-inverse .navbar-header .navbar-toggle .icon-car a:hover{
-                color: rgba(171, 243, 138, 0.678);
-            }
-            .navbar-inverse .navbar-nav .col a:hover {
-	            color: rgba(171, 243, 138, 0.678);
-            }
-            .img-responsive{
+           
+            @keyframes type{ 
+                from { width: 0; } 
+              } 
+              @keyframes type2{
+                0%{width: 0;}
+                50%{width: 0;}
+                100%{ width: 100; } 
+              } 
+            #blink{
+                animation: blink 3s infinite;
+            }  
+            @keyframes blink{
+                to{opacity: .0;}
+              }
+            #imgidid{
                 width:275px;
-                height:375px; 
+                height:400px; 
                 margin-left: auto;
                 margin-right: auto;
-                
+                margin-top:100px;
+		margin-bottom:auto;    
             }   
