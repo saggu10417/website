@@ -4,17 +4,24 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width , initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="../css/groot.css">
-        <link rel="stylesheet" href="../css/groot_page2.css">
-        <link rel="stylesheet" href="../css/groot_page3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/groot.css">
+        <link rel="stylesheet" href="css/groot_page2.css">
+        <link rel="stylesheet" href="css/groot_page3.css">
+    <style>
+    html,body {
+        height: 100%;
+        width: 100%;
+    }
+     </style>
     </head>
+
     <body>
+   
+        <!--Navigation bar-->
         <div class="first">
-        <!-- Navigation bar-->
-        <nav class="navbar navbar-inverse">
-            <div class="container">
+            <nav class="navbar navbar-inverse">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mine">
                         <span class="icon-bar"></span>
@@ -25,53 +32,55 @@
                 </div>
                 <!-- Collapsing navigation bar-->
                 <div class="collapse navbar-collapse" id= "mine">
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="demo"></li>
-                        <script>
-                            var d = new Date();
-                            document.getElementById("demo").innerHTML = d.toDateString();
-                        </script>
-                    <li class="col"><a href="#"><b>Home</b></a></li>
-                    <li class="col"><a href="#features"><b>Features</b></a></li>
-                 </ul>
-            </div>
-            </div>
-        </nav>
+                    
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li id="demo"></li>
+                            <script>
+                                var d = new Date();
+                                document.getElementById("demo").innerHTML = d.toDateString();
+                            </script>
+                        <li class="col"><a href="#"><b>Home</b></a></li>
+                        <li class="col"><a href="#features"><b>About</b></a></li>
+                    
+                    </ul>
+                </div>
+            </nav>   
         <!-- Zoom the image on hover-->
-        <div class="row">
-            <div class="col-sm-4">
-           <img onmouseover="zoomin(this)" onmouseout="zoomout(this)" class="img-responsive" src="../img/logo.png" alt="groot">
-        <script>
-            function zoomin(x){
-                x.style.width = "285px";
-                x.style.height = "385px";
-            }
-            function zoomout(x){
-                x.style.width = "275px";
-                x.style.height = "375px"
-            }
-        </script>
-        </div>
-            <div class="col-sm-2 text-center">
-                <h1 id="typing"><b>I AM GROOT<span id="blink">!!!</span></b></h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img onmouseover="zoomin(this)" onclick="typewriter()"  onmouseout="zoomout(this)" class="img-responsive" id="imgidid" src="../img/LOGO-01 (2).png" alt="groot">
+                        <script>
+                            function zoomin(x){
+                                x.style.width = "285px";
+                                x.style.height = "385px";
+                            }
+                            function zoomout(x){
+                                x.style.width = "275px";
+                                x.style.height = "375px"
+                            }
+                        </script>
+                </div>
+                <div class="col-sm-2 text-center">
+                    
+                    <h1 id="typing"><b>I AM GROOT<span id="blink">!!!</span></b></h1>
                     <h1 id="typing"><b>I AM YOUR PERSONAL ASSISTANT</b></h1>
-             </div>
+                    </div>
                 
             </div>
         </div>
-         <div class="parallax" id="second">
+       <div class="parallax" id="second">
             <div class="container text-center">
                <div class="row">
                    <div class="col-sm-6">
                        <h1 id="features"><b>Features Of uGroot:-</b></h1>
                    </div>
                    <div class="col-sm-6">
-                       <img class="img-responsive second" id="idimg" src="../img/fea.png" alt="features">
+                       <img class="img-responsive" id="idimg" src="../img/fea.png" alt="features">
                    </div>
                 </div>
             </div>
-           <!--features of ugroot will appear in horizontal scroll-->
-             <!--Done with flexbox of CSS-->
+           
+                
                 <div class="container text-center ">
                        
                     <div class="box1">
@@ -95,16 +104,16 @@
                     </div>
                           
                  </div>
-            </div>
-        
-         <div id="third">
+       </div>
+            
+            <div id="third">
                  <div class="container text-center">
                         <div class="row">
                             <div class="col-sm-6">
                                 <h1 id="fonth">Safe and Secure</h1>
                                 <p id="fontp"><b>uGROOT</b> is <b>Open Source.</b>The code is always available for security reviews and can be improved by anyone with the knowledge and understanding online.</p>
                                 <a href="https://github.com/ugroot/GROOT">
-                                    <img class="img-responsive" id="idimg2" src="../img/gitlogo.png" alt="github">
+                                    <img class="img-responsive" id="idimg2" src="gitlogo.png" alt="github">
                                 </a>
                             </div>
                             <div class="col-sm-6">
@@ -116,7 +125,7 @@
                     <nav class="navbar navbar-inverse navbar-bottom" role="navigation">
                            
                                     <div class="navbar-header">
-                                        <a class="navbar-brand" href="index.html"><b>uGROOT</b></a>
+                                        <a class="navbar-brand" href="groot.html"><b>uGROOT</b></a>
                                     </div>
                                     <ul class="nav navbar-nav navbar-right">
                                             <li class="col" style="margin-right:5px;"><a href="#"><b>Contact Us</b></a></li>
@@ -124,6 +133,8 @@
                             
                           </nav>
 
+             
+                  
     </body>
 
 </html>
