@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/groot_page2.css">
     </head>
     <body>
+        <div class="first">
         <!-- Navigation bar-->
         <nav class="navbar navbar-inverse">
             <div class="container">
@@ -23,7 +24,7 @@
                 </div>
                 <!-- Collapsing navigation bar-->
                 <div class="collapse navbar-collapse" id= "mine">
-                <ul class="nav navbar-nav navbar-right" style="color:burlywood;">
+                <ul class="nav navbar-nav navbar-right">
                     <li id="demo"></li>
                         <script>
                             var d = new Date();
@@ -31,13 +32,13 @@
                         </script>
                     <li class="col"><a href="#"><b>Home</b></a></li>
                     <li class="col"><a href="#features"><b>Features</b></a></li>
-                    <li class="col"><a href="#"><b>Contact Us</b></a></li>
-                </ul>
+                 </ul>
             </div>
             </div>
         </nav>
         <!-- Zoom the image on hover-->
-        <div class="first">
+        <div class="row">
+            <div class="col-sm-4">
            <img onmouseover="zoomin(this)" onmouseout="zoomout(this)" class="img-responsive" src="img/logo.png" alt="groot">
         <script>
             function zoomin(x){
@@ -49,8 +50,15 @@
                 x.style.height = "375px"
             }
         </script>
-        </div> 
-         <div class="parallax">
+        </div>
+            <div class="col-sm-2 text-center">
+                <h1 id="typing"><b>I AM GROOT<span id="blink">!!!</span></b></h1>
+                    <h1 id="typing"><b>I AM YOUR PERSONAL ASSISTANT</b></h1>
+             </div>
+                
+            </div>
+        </div>
+         <div class="parallax" id="second">
             <div class="container text-center">
                <div class="row">
                    <div class="col-sm-6">
@@ -87,6 +95,34 @@
                           
                  </div>
             </div>
+        
+         <div id="third">
+                 <div class="container text-center">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h1 id="fonth">Safe and Secure</h1>
+                                <p id="fontp"><b>uGROOT</b> is <b>Open Source.</b>The code is always available for security reviews and can be improved by anyone with the knowledge and understanding online.</p>
+                                <a href="https://github.com/ugroot/GROOT">
+                                    <img class="img-responsive" id="idimg2" src="gitlogo.png" alt="github">
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-responsive" id="idimg3" src="shield.png" alt="secure">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <nav class="navbar navbar-inverse navbar-bottom" role="navigation">
+                           
+                                    <div class="navbar-header">
+                                        <a class="navbar-brand" href="groot.html"><b>uGROOT</b></a>
+                                    </div>
+                                    <ul class="nav navbar-nav navbar-right">
+                                            <li class="col" style="margin-right:5px;"><a href="#"><b>Contact Us</b></a></li>
+                                    </ul>
+                            
+                          </nav>
+
     </body>
 
 </html>
