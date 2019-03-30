@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width , initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapi.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/groot.css">
         <link rel="stylesheet" href="css/groot_page2.css">
@@ -21,7 +21,8 @@
    
         <!--Navigation bar-->
         <div class="first">
-            <nav class="navbar navbar-inverse">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mine">
                         <span class="icon-bar"></span>
@@ -29,20 +30,21 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html"><b>uGROOT</b></a>
+                    <p class="navbar-brand" id="demo"></p>
+                            <script>
+                                var d = new Date();
+                                document.getElementById("demo").innerHTML = d.toDateString();
+                            </script>
                 </div>
                 <!-- Collapsing navigation bar-->
                 <div class="collapse navbar-collapse" id= "mine">
                     
                     <ul class="nav navbar-nav navbar-right" >
-                        <li id="demo"></li>
-                            <script>
-                                var d = new Date();
-                                document.getElementById("demo").innerHTML = d.toDateString();
-                            </script>
                         <li class="col"><a href="#"><b>Home</b></a></li>
                         <li class="col"><a href="#features"><b>About</b></a></li>
                     
                     </ul>
+                </div>
                 </div>
             </nav>   
         <!-- Zoom the image on hover-->
@@ -52,15 +54,15 @@
                         <script>
                             function zoomin(x){
                                 x.style.width = "285px";
-                                x.style.height = "385px";
+                                x.style.height = "410px";
                             }
                             function zoomout(x){
                                 x.style.width = "275px";
-                                x.style.height = "375px"
+                                x.style.height = "400px"
                             }
                         </script>
                 </div>
-                <div class="col-sm-2 text-center">
+                <div class="col-sm-6 text-center">
                     
                     <h1 id="typing"><b>I AM GROOT<span id="blink">!!!</span></b></h1>
                     <h1 id="typing"><b>I AM YOUR PERSONAL ASSISTANT</b></h1>
@@ -72,7 +74,7 @@
             <div class="container text-center">
                <div class="row">
                    <div class="col-sm-6">
-                       <h1 id="features"><b>Features Of uGroot:-</b></h1>
+                       <h1 id="features"><b>Features Of uGroot</b></h1>
                    </div>
                    <div class="col-sm-6">
                        <img class="img-responsive" id="idimg" src="img/fea.png" alt="features">
