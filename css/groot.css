@@ -10,6 +10,7 @@
                 border: 0;
                 padding-bottom: 0px;
                 margin-bottom: 0px;
+		overflow-x: hidden;
             }
             
             .navbar-inverse .navbar-header #demo{
