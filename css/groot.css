@@ -5,14 +5,7 @@
 	    	min-height:100%;
            }
 
-            .navbar-inverse{
-                border-radius: 0;
-                border: 0;
-                padding-bottom: 0px;
-                margin-bottom: 0px;
-		overflow-x: hidden;
-            }
-            
+                    
             .navbar-inverse .navbar-header #demo{
                 padding-top: 15px;
                 padding-left: 8px;
