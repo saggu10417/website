@@ -12,9 +12,9 @@
                 margin-bottom: 0px;
             }
             
-            .navbar-inverse .navbar-nav #demo{
+            .navbar-inverse .navbar-header #demo{
                 padding-top: 15px;
-                padding-right: 15px;
+                padding-left: 15px;
                 color:white;
 		}
            @media screen and (max-width:450px){
