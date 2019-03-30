@@ -15,7 +15,7 @@
             
             .navbar-inverse .navbar-header #demo{
                 padding-top: 15px;
-                padding-left: 15px;
+                padding-left: 8px;
                 color:white;
 		}
            @media screen and (max-width:450px){
