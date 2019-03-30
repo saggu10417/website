@@ -17,22 +17,42 @@
                 padding-right: 15px;
                 color:white;
 		}
-           
+           @media screen and (max-width:450px){
 		#typing{
                 color: rgb(0, 0, 0); 
                 font-family: "Courier";
                 width:18em;
-                font-size: 4vh;
-                margin: 150px 0 0 0;
+                font-size: 2.5vh;
+                padding: 20px 0 0 0;
+		margin-left:auto;
+		margin-right:auto;
                 white-space: nowrap;
                 overflow: hidden;
                 animation: type 4s steps(60, end);
             }
             #typing:nth-child(2){
                 animation: type2 6s steps(60, end);
-                margin: 0 0 0 0;
+                padding: 0 0 0 0;
             }
-           
+	}   
+        @media screen and (min-width: 450px){
+		#typing{
+                color: rgb(0, 0, 0); 
+                font-family: "Courier";
+                width: 18em;
+                font-size: 3.5vh;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 150px 0 0 0;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: type 4s steps(60, end);
+            }
+                #typing:nth-child(2){
+                animation: type2 6s steps(60, end);
+                padding: 0 0 0 0;
+            }
+          }   
             @keyframes type{ 
                 from { width: 0; } 
               } 
@@ -42,7 +62,7 @@
                 100%{ width: 100; } 
               } 
             #blink{
-                animation: blink 3s infinite;
+                animation: blink 1s infinite;
             }  
             @keyframes blink{
                 to{opacity: .0;}
