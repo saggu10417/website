@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/groot.css">
+        <link rel="stylesheet" href="css/groot_page2.css">
+        <link rel="stylesheet" href="css/groot_page3.css">
+    <style>
+    html,body {
+        height: 100%;
+        overflow-x:hidden;
+    }
+     </style>
+    </head>
+
+    <body>
+   
+        <!--Navigation bar-->
+        <div class="first">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mine">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><b>uGROOT</b></a>
+                    <p class="navbar-brand" id="demo"></p>
+                            <script>
+                                var d = new Date();
+                                document.getElementById("demo").innerHTML = d.toDateString();
+                            </script>
+                </div>
+                <!-- Collapsing navigation bar-->
+                <div class="collapse navbar-collapse" id= "mine">
+                    
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li class="col"><a href="#"><b>Home</b></a></li>
+                        <li class="col"><a href="#features"><b>About</b></a></li>
+                    
+                    </ul>
+                </div>
+                </div>
+            </nav>   
+        <!-- Zoom the image on hover-->
+            <div class="row">
+                <div class="col-sm-4">
+                    <img onmouseover="zoomin(this)" onclick="typewriter()"  onmouseout="zoomout(this)" class="img-responsive" id="imgidid" src="img/logo.png" alt="groot">
+                        <script>
+                            function zoomin(x){
+                                x.style.width = "285px";
+                                x.style.height = "410px";
+                            }
+                            function zoomout(x){
+                                x.style.width = "275px";
+                                x.style.height = "400px"
+                            }
+                        </script>
+                </div>
+                <div class="col-sm-6 text-center">
+                    
+                    <h1 id="typing"><b>I AM GROOT<span id="blink">!!!</span></b></h1>
+                    <h1 id="typing"><b>I AM YOUR PERSONAL ASSISTANT</b></h1>
+                    </div>
+                
+            </div>
+        </div>
+       <div class="parallax" id="second">
+            <div class="container text-center" style="overflow-x: hidden;overflow-y: hidden;">
+               <div class="row">
+                   <div class="col-sm-6">
+                       <h1 id="features"><b>Features Of uGroot</b></h1>
+                   </div>
+                   <div class="col-sm-6">
+                       <img class="img-responsive" id="idimg" src="img/fea.png" alt="features">
+                   </div>
+                </div>
+            </div>
+           
+                
+                <div class="container text-center ">
+                       
+                    <div class="box1">
+                       <h2 class="h2">Text-to-speech</h2>
+                       
+                    </div>
+                    <div class="box1">
+                        <h2 class="h2">Speech-to-Text</h2> 
+                    </div>
+                    <div class="box1">
+                        <h2 class="h2">Voice Commands</h2> 
+                    </div>
+                    <div class="box1">
+                        <h2 class="h2">Text Commands</h2> 
+                    </div>
+                    <div class="box1">
+                        <h2 class="h2">Playing Songs on YouTube with voice commands</h2> 
+                    </div>
+                    <div class="box1">
+                        <h2 class="h2">Opening URLs in Browser</h2> 
+                    </div>
+                          
+                 </div>
+       </div>
+            
+            <div id="third">
+                 <div class="container text-center">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h1 id="fonth">Safe and Secure</h1>
+                                <p id="fontp"><b>uGROOT</b> is <b>Open Source.</b>The code is always available for security reviews and can be improved by anyone with the knowledge and understanding online.</p>
+                                <a href="https://github.com/ugroot/GROOT">
+                                    <img class="img-responsive" id="idimg2" src="gitlogo.png" alt="github">
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-responsive" id="idimg3" src="img/shield.png" alt="secure">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <nav class="navbar navbar-inverse navbar-bottom" role="navigation">
+                           
+                                    <div class="navbar-header">
+                                        <a class="navbar-brand" href="index.html"><b>uGROOT</b></a>
+                                    </div>
+                                    <ul class="nav navbar-nav navbar-right">
+                                            <li class="col" style="margin-right:5px;"><a href="mailto:omkar10859@gmail.com"><b>Contact Us</b></a></li>
+                                    </ul>
+                            
+                          </nav>
+
+             
+                  
+    </body>
+
+</html>
